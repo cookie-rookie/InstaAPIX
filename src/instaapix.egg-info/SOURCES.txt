@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+src/instaapix.egg-info/PKG-INFO
+src/instaapix.egg-info/SOURCES.txt
+src/instaapix.egg-info/dependency_links.txt
+src/instaapix.egg-info/requires.txt
+src/instaapix.egg-info/top_level.txt
