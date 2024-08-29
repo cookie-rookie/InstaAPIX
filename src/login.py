@@ -2,17 +2,16 @@ import requests
 
 def login(username, password):
     session = requests.Session()
-    
+    response = session.get('https://www.instagram.com/', headers=headers)
+    csrf_token = response.cookies.get('csrftoken', '')
     headers = {
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36',
-        'X-CSRFToken': 'your_csrf_token',
+        'X-CSRFToken': csrf_token,
         'X-Instagram-AJAX': '1',
         'X-Requested-With': 'XMLHttpRequest',
     }
 
-    response = session.get('https://www.instagram.com/', headers=headers)
-    csrf_token = response.cookies['csrftoken']
-    headers['X-CSRFToken'] = csrf_token
+  
 
     login_data = {
         'username': username,

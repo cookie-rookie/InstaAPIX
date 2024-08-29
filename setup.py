@@ -12,5 +12,5 @@ setup(
     description='An API designed to do practically anything a normal user can do on Instagram but with more.',
     long_description=open('README.md').read(),
     long_description_content_type='text/markdown',
-    url='https://github.com/yourusername/instapy',  # Replace with your actual repository URL
+    url='https://github.com/cookie-rookie/InstaAPIX', 
 )
