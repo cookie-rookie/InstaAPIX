@@ -3,10 +3,8 @@ from setuptools import setup, find_packages
 setup(
     name='InstaAPIX',
     version='0.1',
-     packages=(
-        find_packages() +
-        find_packages(where='./src')
-     ),  
+    packages=find_packages(where='src'),  # Finds all packages within the src directory
+    package_dir={'': 'src'},  # Maps the root package directory to src
     install_requires=[
         'requests',
     ],
