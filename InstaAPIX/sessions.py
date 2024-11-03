@@ -1,6 +1,6 @@
 import requests
 
-class sessions:
+class SessionManager:
     def join_session(proxy : bool, username : str, password : str):
             session = requests.Session()
             response = session.get('https://www.instagram.com/', headers=headers)

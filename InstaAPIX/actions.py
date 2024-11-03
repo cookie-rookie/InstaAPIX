@@ -1,7 +1,7 @@
 import requests
 from sessions import check_session  
 
-class actions:
+class UserActions:
     def dm(session: requests.Session, user: str, msg: str):
 
         if not check_session(session):

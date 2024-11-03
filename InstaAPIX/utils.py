@@ -1,4 +1,4 @@
-class utils:
+class Utils:
     def get_csrf_token(response):
         return response.cookies.get('csrftoken', None)
 
